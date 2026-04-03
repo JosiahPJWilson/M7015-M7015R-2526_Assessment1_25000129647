@@ -1,23 +1,18 @@
 # M7015-M7015R-2526_Assessment1_25000129647
-# Predicting Event Interest - Logistic Regression Analysis
+# Depression Risk Prediction Using Supervised Machine Learning
 
 ## Overview
-This project uses logistic regression to predict whether a user will express 
-interest in an event. 
+[cite_start]This project uses three supervised machine learning models (Logistic Regression, Random Forest with SMOTE, and XGBoost) to predict whether a US adult respondent has ever been formally diagnosed with a depressive disorder[cite: 9, 18, 490].
 
 ## Repository Contents
 
 | File | Description |
 |------|-------------|
-| `train.csv` | Original Kaggle file - core training data (user, event, interested) |
-| `users.csv` | Original Kaggle file - user demographics |
-| `events_matched.csv` | Derived from Kaggle events.csv - filtered to only events appearing in train.csv |
-| `event_attendees_sample.csv` | Derived from Kaggle event_attendees.csv - sampled to 5,000 rows |
-| `event_attendance_dataset.csv` | Final merged dataset used for modelling |
-| `Predicting_Event_Interest_-_Making_the_Dataset.ipynb` | Notebook 1 - data preparation |
-| `Predicting_Event_Interest_-_Logistic_Regression_Application.ipynb` | Notebook 2 - modelling and evaluation |
+| `brfss2023_depression_MODELREADY.csv` | [cite_start]Cleaned, model-ready dataset derived from the 2023 CDC BRFSS public-use file[cite: 11, 74]. |
+| `Data_Preparation_Notebook.ipynb` | [cite_start]Notebook 1 - Raw data cleaning, missing value handling, and feature encoding[cite: 11, 134]. |
+| `Modelling_Notebook.ipynb` | [cite_start]Notebook 2 - Model training, threshold tuning, cross-validation, and SHAP explainability[cite: 5, 20]. |
 
 ## How to Run
 Run the notebooks in order:
-1. `Predicting_Event_Interest_-_Making_the_Dataset.ipynb`
-2. `Predicting_Event_Interest_-_Logistic_Regression_Application.ipynb`
+1. `Data_Preparation_Notebook.ipynb`
+2. `Modelling_Notebook.ipynb`
